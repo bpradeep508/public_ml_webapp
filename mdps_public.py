@@ -43,6 +43,7 @@ if (selected == 'Flower Classification using EKNN'):
         sepal_width = st.slider('Sepal width', 2.0, 4.4, 3.4)
         petal_length = st.slider('Petal length', 1.0, 6.9, 1.3)
         petal_width = st.slider('Petal width', 0.1, 2.5, 0.2)
+        k = st.slider("Choose value of K", min_value=1, max_value=10,key='k')
         data = {'sepal_length': sepal_length,
             'sepal_width': sepal_width,
             'petal_length': petal_length,
@@ -54,7 +55,13 @@ if (selected == 'Flower Classification using EKNN'):
     
     st.subheader('User Input parameters')
     st.write(df)
-    
+    # Initial Data Plot
+    st.dataframe(df)
+    fig = px.scatter(df, x = 'sepal_length' , y='sepal_width',z='petal_length',w='petal_width', symbol='Label',symbol_map={'0':'square-dot' , '1':'circle'})
+    fig.add_trace(
+        go.Scatter(x= [df[0]], y=[df[1]],z=[df[2]],w=[df[3]] name = "Point to Classify", )
+    )
+    st.plotly_chart(fig)
     iris = datasets.load_iris()
     X = iris.data
     Y = iris.target
