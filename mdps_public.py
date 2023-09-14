@@ -24,9 +24,9 @@ with st.sidebar:
     
     selected = option_menu('Encrypted Disease Prediction System',
                           
-                          ['Flower Prediction using KNN',
-                           'Heart Disease Prediction using SVM',
-                           'Breast cancer Prediction usign SVM'
+                          ['Flower Prediction using EKNN',
+                           'Heart Disease Prediction using ESVM',
+                           'Breast cancer Prediction using ESVM'
                            ],
                           icons=['activity','heart','person'],
                           default_index=0)
@@ -35,7 +35,7 @@ with st.sidebar:
 # Diabetes Prediction Page
 if (selected == 'Flower Prediction using KNN'):
     # page title
-    st.title('Flower Prediction using using EML')
+    st.title('Flower Prediction using KNN')
     st.sidebar.header('User Input Parameters')
 
     def user_input_features():
@@ -82,7 +82,7 @@ if (selected == 'Flower Prediction using KNN'):
 if (selected == 'Heart Disease Prediction using SVM'):
     
     # page title
-    st.title('Heart Disease Prediction using EML')
+    st.title('Heart Disease Prediction using ESVM')
     
     col1, col2, col3 = st.columns(3)
     
@@ -147,10 +147,10 @@ if (selected == 'Heart Disease Prediction using SVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Breast cancer Prediction usign SVM"):
+if (selected == "Breast cancer Prediction usign ESVM"):
     
     # page title
-    st.title("Breast cancer Prediction using EML")
+    st.title("Breast cancer Prediction using ESVM")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
@@ -226,7 +226,7 @@ if (selected == "Breast cancer Prediction usign SVM"):
     parkinsons_diagnosis = ''
     
     # creating a button for Prediction    
-    if st.button("Parkinson's Test Result"):
+    if st.button("Breast cancer Test Result"):
         parkinsons_prediction = parkinsons_model.predict([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
         
         if (parkinsons_prediction[0] == 1):
