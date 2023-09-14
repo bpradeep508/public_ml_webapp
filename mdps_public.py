@@ -147,10 +147,10 @@ if (selected == 'Heart Disease Prediction using ESVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Breast Cancer Prediction using ESVM"):
+if (selected == "Breast cancer Prediction using ESVM"):
     
     # page title
-    st.title("Breast cancer Prediction using ESVM")
+    st.title("Breast Cancer Prediction using ESVM")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
