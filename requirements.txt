@@ -4,3 +4,5 @@ streamlit==1.2.0
 streamlit-option-menu==0.3.2
 scikit-learn==1.0.1
 nufhe==0.0.3
+pandas==2.1.0
+scikit-learn==1.3.0
