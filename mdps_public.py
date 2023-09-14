@@ -36,7 +36,7 @@ with st.sidebar:
 if (selected == 'Flower Prediction using EKNN'):
     # page title
     st.title('Flower Prediction using EKNN')
-    st.sidebar.header('User Input Parameters')
+    st.header('User Input Parameters')
 
     def user_input_features():
         sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
