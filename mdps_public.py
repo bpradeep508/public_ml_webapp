@@ -24,18 +24,18 @@ with st.sidebar:
     
     selected = option_menu('Encrypted Machine Learning ',
                           
-                          ['Flower Prediction using EKNN',
-                           'Heart Disease Prediction using ESVM',
-                           'Breast Cancer Prediction using ESVM'
+                          ['Flower Classification using EKNN',
+                           'Heart Disease Classification using ESVM',
+                           'Breast Cancer Classification using ESVM'
                            ],
                           icons=['activity','heart','person'],
                           default_index=0)
     
     
 # Diabetes Prediction Page
-if (selected == 'Flower Prediction using EKNN'):
+if (selected == 'Flower Classification using EKNN'):
     # page title
-    st.title('Flower Prediction using EKNN')
+    st.title('Flower Classification using EKNN')
     st.header('User Input Parameters')
 
     def user_input_features():
@@ -79,7 +79,7 @@ if (selected == 'Flower Prediction using EKNN'):
 
 
 # Heart Disease Prediction Page
-if (selected == 'Heart Disease Prediction using ESVM'):
+if (selected == 'Heart Disease Classification using ESVM'):
     
     # page title
     st.title('Heart Disease Prediction using ESVM')
@@ -147,7 +147,7 @@ if (selected == 'Heart Disease Prediction using ESVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Breast Cancer Prediction using ESVM"):
+if (selected == "Breast Cancer Classification using ESVM"):
     
     # page title
     st.title("Breast Cancer Prediction using ESVM")
