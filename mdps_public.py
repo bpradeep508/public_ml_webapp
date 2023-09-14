@@ -9,7 +9,7 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier 
 import plotly.express as px
 import plotly.graph_objects as go
-
+import svmnufhebreast as svmb
 # loading the saved models
 
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
@@ -142,7 +142,7 @@ if (selected == 'Heart Disease Classification using ESVM'):
     # creating a button for Prediction
     
     if st.button('Heart Disease Test Result'):
-        heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
+        heart_prediction =  ([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
@@ -195,38 +195,7 @@ if (selected == "Breast Cancer Classification using ESVM"):
     with col1:
         APQ3 = st.text_input('Shimmer:APQ3')
         
-    with col2:
-        APQ5 = st.text_input('Shimmer:APQ5')
-        
-    with col3:
-        APQ = st.text_input('MDVP:APQ')
-        
-    with col4:
-        DDA = st.text_input('Shimmer:DDA')
-        
-    with col5:
-        NHR = st.text_input('NHR')
-        
-    with col1:
-        HNR = st.text_input('HNR')
-        
-    with col2:
-        RPDE = st.text_input('RPDE')
-        
-    with col3:
-        DFA = st.text_input('DFA')
-        
-    with col4:
-        spread1 = st.text_input('spread1')
-        
-    with col5:
-        spread2 = st.text_input('spread2')
-        
-    with col1:
-        D2 = st.text_input('D2')
-        
-    with col2:
-        PPE = st.text_input('PPE')
+    
         
     
     
@@ -235,14 +204,14 @@ if (selected == "Breast Cancer Classification using ESVM"):
     
     # creating a button for Prediction    
     if st.button("Breast cancer Test Result"):
-        parkinsons_prediction = parkinsons_model.predict([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
+        parkinsons_prediction = svmb.intialization([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB, APQ3]])                          
         
         if (parkinsons_prediction[0] == 1):
-          parkinsons_diagnosis = "The person has Parkinson's disease"
+          parkinsons_diagnosis = "The person has cancer"
         else:
-          parkinsons_diagnosis = "The person does not have Parkinson's disease"
+          parkinsons_diagnosis = "The person does not have cancer"
         
-    st.success(parkinsons_diagnosis)
+    st.success(cancer_diagnosis)
 
 
 
