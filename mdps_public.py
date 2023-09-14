@@ -26,8 +26,8 @@ with st.sidebar:
                           
                           ['Flower Prediction using KNN',
                            ' Heart Disease Prediction using SVM',
-                           ' Breast cancer Prediction usign SVM',
-                           'Parkinsons Prediction'],
+                           ' Breast cancer Prediction usign SVM'
+                           ],
                           icons=['activity','heart','person'],
                           default_index=0)
     
@@ -35,7 +35,7 @@ with st.sidebar:
 # Diabetes Prediction Page
 if (selected == 'Flower Prediction using KNN'):
     
-   st.sidebar.header('User Input Parameters')
+    st.sidebar.header('User Input Parameters')
 
     def user_input_features():
     sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
@@ -146,7 +146,7 @@ if (selected == 'Heart Disease Prediction using SVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Parkinsons Prediction"):
+if (selected == "Breast cancer Prediction usign SVM"):
     
     # page title
     st.title("Parkinson's Disease Prediction using ML")
