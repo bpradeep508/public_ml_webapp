@@ -22,7 +22,7 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Encrypted Disease Prediction System',
+    selected = option_menu('Encrypted Machine Learning ',
                           
                           ['Flower Prediction using EKNN',
                            'Heart Disease Prediction using ESVM',
@@ -147,7 +147,7 @@ if (selected == 'Heart Disease Prediction using ESVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Breast cancer Prediction using ESVM"):
+if (selected == "Breast Cancer Prediction using ESVM"):
     
     # page title
     st.title("Breast cancer Prediction using ESVM")
