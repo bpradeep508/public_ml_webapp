@@ -33,9 +33,9 @@ with st.sidebar:
     
     
 # Diabetes Prediction Page
-if (selected == 'Flower Prediction using KNN'):
+if (selected == 'Flower Prediction using EKNN'):
     # page title
-    st.title('Flower Prediction using KNN')
+    st.title('Flower Prediction using EKNN')
     st.sidebar.header('User Input Parameters')
 
     def user_input_features():
@@ -79,7 +79,7 @@ if (selected == 'Flower Prediction using KNN'):
 
 
 # Heart Disease Prediction Page
-if (selected == 'Heart Disease Prediction using SVM'):
+if (selected == 'Heart Disease Prediction using ESVM'):
     
     # page title
     st.title('Heart Disease Prediction using ESVM')
