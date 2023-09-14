@@ -58,9 +58,9 @@ if (selected == 'Flower Classification using EKNN'):
     st.write(df)
     # Initial Data Plot
     st.dataframe(df)
-    fig = px.scatter(df, x = 'sepal_length' , y='sepal_width',z='petal_length',w='petal_width', symbol='Label',symbol_map={'0':'square-dot' , '1':'circle'})
+    fig = px.scatter(df, x = 'sepal_length' , y='sepal_width', symbol='Label',symbol_map={'0':'square-dot' , '1':'circle'})
     fig.add_trace(
-        go.Scatter(x= [input[0]], y=[input[1]],z=[input[2]],w=[input[3]], name = "Point to Classify", )
+        go.Scatter(x= [input[0]], y=[input[1]], name = "Point to Classify", )
     )
     st.plotly_chart(fig)
     iris = datasets.load_iris()
