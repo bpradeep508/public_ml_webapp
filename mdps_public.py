@@ -9,7 +9,7 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier 
 import plotly.express as px
 import plotly.graph_objects as go
-import svmnufhebreast as svmb
+import public_ml_webapp.svmnufhebreast as svmb
 # loading the saved models
 
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
