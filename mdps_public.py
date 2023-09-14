@@ -25,8 +25,8 @@ with st.sidebar:
     selected = option_menu('Encrypted Disease Prediction System',
                           
                           ['Flower Prediction using KNN',
-                           ' Heart Disease Prediction using SVM',
-                           ' Breast cancer Prediction usign SVM'
+                           'Heart Disease Prediction using SVM',
+                           'Breast cancer Prediction usign SVM'
                            ],
                           icons=['activity','heart','person'],
                           default_index=0)
