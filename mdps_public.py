@@ -26,7 +26,7 @@ with st.sidebar:
                           
                           ['Flower Prediction using EKNN',
                            'Heart Disease Prediction using ESVM',
-                           'Breast cancer Prediction using ESVM'
+                           'Breast Cancer Prediction using ESVM'
                            ],
                           icons=['activity','heart','person'],
                           default_index=0)
@@ -147,7 +147,7 @@ if (selected == 'Heart Disease Prediction using ESVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Breast cancer Prediction using ESVM"):
+if (selected == "Breast Cancer Prediction using ESVM"):
     
     # page title
     st.title("Breast Cancer Prediction using ESVM")
