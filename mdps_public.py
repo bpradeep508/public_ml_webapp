@@ -147,7 +147,7 @@ if (selected == 'Heart Disease Prediction using ESVM'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Breast cancer Prediction usign ESVM"):
+if (selected == "Breast cancer Prediction using ESVM"):
     
     # page title
     st.title("Breast cancer Prediction using ESVM")
