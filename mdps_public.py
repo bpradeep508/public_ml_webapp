@@ -7,7 +7,8 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier 
-
+import plotly.express as px
+import plotly.graph_objects as go
 
 # loading the saved models
 
