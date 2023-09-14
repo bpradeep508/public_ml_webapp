@@ -47,7 +47,7 @@ if (selected == 'Flower Prediction using KNN'):
             'petal_length': petal_length,
             'petal_width': petal_width}
         features = pd.DataFrame(data, index=[0])
-    return features
+        return features
     
     df = user_input_features()
     
