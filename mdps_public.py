@@ -150,7 +150,7 @@ if (selected == 'Heart Disease Prediction using SVM'):
 if (selected == "Breast cancer Prediction usign SVM"):
     
     # page title
-    st.title("Parkinson's Disease Prediction using EML")
+    st.title("Breast cancer Prediction using EML")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
